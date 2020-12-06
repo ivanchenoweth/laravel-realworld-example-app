@@ -183,3 +183,7 @@ This applications has CORS enabled by default on all API endpoints. The default 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
 - https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 - https://www.w3.org/TR/cors
+
+# Trobule shooting with  line 95 of Lorem.php 
+
+https://stackoverflow.com/questions/59541888/errorexception-implode-passing-glue-string-after-array-is-deprecated-swap
