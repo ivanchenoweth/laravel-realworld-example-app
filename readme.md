@@ -184,6 +184,24 @@ This applications has CORS enabled by default on all API endpoints. The default 
 - https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 - https://www.w3.org/TR/cors
 
-# Trobule shooting with  line 95 of Lorem.php 
+----------
+
+# TrobuleShooting with  line 95 of Lorem.php 
 
 https://stackoverflow.com/questions/59541888/errorexception-implode-passing-glue-string-after-array-is-deprecated-swap
+
+----------
+
+# Suggestion 
+
+- Change the mysql 5.7.24 root empty password. 
+
+> Go to the Eclipse Che main menu > Terminal > Open terminal in a container in a specific container > MySql
+
+> Type:
+`sh-4.2$ mysql -u root -p`
+
+- Copy adminer to the public temporally https://www.adminer.org
+- 
+
+
