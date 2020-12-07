@@ -192,12 +192,18 @@ https://stackoverflow.com/questions/59541888/errorexception-implode-passing-glue
 
 > Replace in the file ./vendor/fzaninotto/facker/src/Facker/Provider/Lorem.php line 95
 `return implode($words, ' ') . '.';`
+
 with :
+
 `return implode(' ', $words) . '.';`
+
 In the same file (Lorem.php) line 135, replace:
+
 `return implode(static::sentences($nbSentences), ' ');`
+
 with:
-``
+
+`return implode(' ',static::sentences($nbSentences));`
 ----------
 
 # Suggestion 
