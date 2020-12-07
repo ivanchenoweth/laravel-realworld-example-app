@@ -191,6 +191,7 @@ This applications has CORS enabled by default on all API endpoints. The default 
 https://stackoverflow.com/questions/59541888/errorexception-implode-passing-glue-string-after-array-is-deprecated-swap
 
 > Replace in the file ./vendor/fzaninotto/facker/src/Facker/Provider/Lorem.php line 95
+
 `return implode($words, ' ') . '.';`
 
 with :
@@ -213,7 +214,16 @@ with:
 > Go to the Eclipse Che main menu > Terminal > Open terminal in a container in a specific container > MySql
 
 > Type:
+
 `sh-4.2$ mysql -u root -p`
+
+`update user set Password=PASSWORD('new-password') where user='root';`
+
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';`
+
+`flush privileges;`
+
+`exit;`
 
 - Copy adminer to the public temporally https://www.adminer.org
 - 
