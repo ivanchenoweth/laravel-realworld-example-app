@@ -205,6 +205,7 @@ In the same file (Lorem.php) line 135, replace:
 with:
 
 `return implode(' ',static::sentences($nbSentences));`
+
 ----------
 
 # Suggestion 
