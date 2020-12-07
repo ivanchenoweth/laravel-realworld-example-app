@@ -208,9 +208,13 @@ with:
 
 ----------
 
-# Suggestion 
 
-- Change the mysql 5.7.24 root empty password.
+
+----------
+
+# Suggestions
+
+- Change the mysql 5.7.24 root empty password, and prepare a user and password for use the APIs.
 
 > Go to the Eclipse Che main menu > Terminal > Open terminal in a container in a specific container > MySql
 
@@ -222,6 +226,10 @@ with:
 
 `flush privileges;`
 
+`mysql> use homestad; `
+
+- `UPDATE users SET email = 'benjamin.denesik@example.net', password = encrypt('secret') WHERE email = benjamin.denesik@example.net';`
+
 `exit;`
 
 - Copy adminer to the public temporally https://www.adminer.org
@@ -229,6 +237,6 @@ with:
 `php artisan run`
 > A popup appear: A new process is now listening on port 8000 but is listening on interface 127.0.0.1 which is internal. You should change to be remotely available. Would you want to add a redirect for this port so it becomes available ?
 > chose Yes, and other popup appear: Redirect is now enabled on port 8000. External URL is https://routefd29czi6-something.openshiftapps.com
-- go to the adminer.php in the URL adding /adminer.php with the credentials
-
+- go to the adminer.php in the URL https://routefd29czi6-something.openshiftapps.com/adminer.php with the mysql credentials 
+- edit the .env file to change mysql
 
