@@ -208,10 +208,6 @@ with:
 
 ----------
 
-
-
-----------
-
 # Suggestions
 
 - Change the mysql 5.7.24 root empty password, and prepare a user and password for use the APIs.
@@ -239,4 +235,12 @@ with:
 > chose Yes, and other popup appear: Redirect is now enabled on port 8000. External URL is https://routefd29czi6-something.openshiftapps.com
 - go to the adminer.php in the URL https://routefd29czi6-something.openshiftapps.com/adminer.php with the mysql credentials 
 - edit the .env file to change mysql
+
+----------
+
+# Unit testing 
+
+check Version of PHPunit typing in the php container: bash-5.0 /projects/laravel-realworld-example-app $
+
+`./vendor/phpunit/phpunit/phpunit --version`
 
