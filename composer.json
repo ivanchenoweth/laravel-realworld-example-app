@@ -12,7 +12,6 @@
         "tymon/jwt-auth": "1.0.0-rc.4.1"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "^2.3",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~6.0",
