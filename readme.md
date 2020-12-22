@@ -244,3 +244,14 @@ check Version of PHPunit typing in the php container: bash-5.0 /projects/laravel
 
 `./vendor/phpunit/phpunit/phpunit --version`
 
+------------
+
+# Troubleshoot with Unit testing (fix commited)
+
+Tymon\JWTAuth\Exceptions\JWTException: Could not create token: Using integers for registered date claims is deprecated, please use DateTimeImmutable objects instead.
+
+> In config\jwt.php file
+Change 'jwt' => Tymon\JWTAuth\Providers\JWT\Lcobucci::class, to 'jwt' => Tymon\JWTAuth\Providers\JWT\Namshi::class,
+=> It works for me <3
+
+https://github.com/tymondesigns/jwt-auth/issues/2059
